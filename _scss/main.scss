@@ -1,6 +1,9 @@
 @import "reset";
-@import "syntax";
+@import "header";
+@import "nav";
+@import "footer";
 
 body {
-    background: white;
+    background: LightSteelBlue;
+    font-family: 'Inconsolata', monospace;
 }
