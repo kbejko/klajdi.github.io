@@ -1,25 +1,30 @@
-footer {
-  position: absolute;
-  bottom: 1rem;
+.social {
+  background-color: SlateGrey;
   width: 100%;
   height: 50px;
-  background-color: SlateGrey;
+
+    footer {
+      position: relative;
+      top: 1rem;
+      right: 1rem;
+      float: right;
+    }
 
 
-  li {
-    display: inline-block;
-    margin-left: 1em;
-  }
-
-  a {
-    color: LightSkyBlue;
-    text-decoration: none;
-
-      &:hover {
-        color: LightSteelBlue;
+      li {
+        display: inline-block;
+        margin-left: 1em;
       }
-      &:visited {
-        color: LightSalmon;
+
+      a {
+        color: LightSkyBlue;
+        text-decoration: none;
+
+          &:hover {
+            color: LightSteelBlue;
+          }
+          &:visited {
+            color: LightSalmon;
+          }
       }
-  }
 }
