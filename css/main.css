@@ -188,49 +188,57 @@ td,
 th {
   padding: 0; }
 
-.tip-top {
-  height: 50px;
-  background-color: SlateGrey;
-  background-size: cover; }
-
-.title {
-  display: none; }
-
-nav {
-  position: absolute;
-  top: 1rem;
-  right: 1rem; }
-  nav li {
-    display: inline-block;
-    margin-left: 1em; }
-  nav a {
-    color: LightSkyBlue;
-    text-decoration: none; }
-    nav a:hover {
-      color: LightSteelBlue; }
-    nav a.active {
-      color: LightSalmon; }
-
-.social {
-  background-color: SlateGrey;
-  width: 100%;
-  height: 50px; }
-  .social footer {
-    position: relative;
-    top: 1rem;
-    right: 1rem;
-    float: right; }
-  .social li {
-    display: inline-block;
-    margin-left: 1em; }
-  .social a {
-    color: LightSkyBlue;
-    text-decoration: none; }
-    .social a:hover {
-      color: LightSteelBlue; }
-    .social a:visited {
-      color: LightSalmon; }
-
 body {
-  background: LightSteelBlue;
+  background: Snow;
   font-family: 'Inconsolata', monospace; }
+
+#home {
+  position: relative;
+  margin: auto 50px; }
+
+h1 {
+  font-size: 3em; }
+
+h2 {
+  font-size: 1.4em;
+  margin: 10px 0 10px; }
+
+.main {
+  margin: 20px;
+  padding: 10px; }
+
+li {
+  list-style: none;
+  font-size: 1em;
+  padding-bottom: 10px; }
+
+a {
+  color: MediumAquaMarine; }
+  a:hover {
+    color: Sienna; }
+
+.button {
+  margin: 20px;
+  padding: 10px; }
+
+button {
+  background-color: inherit;
+  color: MediumAquaMarine;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  margin-right: 5px; }
+  button:active {
+    border: none;
+    background: inherit;
+    box-shadow: none; }
+
+#diu {
+  width: 400px;
+  height: 400px;
+  margin-top: 20px; }
+
+.diu {
+  background-image: url("/images/diu_piu.jpg");
+  background-position: center;
+  background-size: cover; }

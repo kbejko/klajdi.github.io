@@ -1,9 +1,68 @@
 @import "reset";
-@import "header";
-@import "nav";
-@import "footer";
 
 body {
-    background: LightSteelBlue;
-    font-family: 'Inconsolata', monospace;
+  background: Snow;
+  font-family: 'Inconsolata', monospace;
+}
+
+#home {
+  position: relative;
+  margin: auto 50px;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 1.4em;
+  margin: 10px 0 10px;
+}
+
+.main {
+  margin: 20px;
+  padding: 10px;
+}
+
+li {
+  list-style: none;
+  font-size: 1em;
+  padding-bottom: 10px;
+}
+
+a {
+  color: MediumAquaMarine;
+  &:hover {
+    color: Sienna;
+  }
+}
+
+.button {
+  margin: 20px;
+  padding: 10px;
+}
+button {
+  background-color: inherit;
+  color: MediumAquaMarine;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  margin-right: 5px;
+  &:active {
+    border: none;
+    background: inherit;
+    box-shadow: none;
+  }
+}
+
+#diu {
+  width: 400px;
+  height: 400px;
+  margin-top: 20px;
+}
+
+.diu {
+  background-image: url('/images/diu_piu.jpg');
+  background-position: center;
+  background-size: cover;
 }
