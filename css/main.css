@@ -189,54 +189,51 @@ th {
   padding: 0; }
 
 body {
-  background: Snow;
-  font-family: 'Inconsolata', monospace; }
+  font-family: 'Inconsolata', monospace;
+  background: Snow; }
 
 #home {
   position: relative;
   margin: auto 50px; }
 
-h1 {
-  font-size: 3em; }
-
-h2 {
-  font-size: 1.4em;
-  margin: 10px 0 10px; }
+.headers {
+  margin: 20px; }
+  .headers h1 {
+    font-size: 3em; }
+  .headers h2 {
+    font-size: 1.4em; }
 
 .main {
-  margin: 20px;
-  padding: 10px; }
-
-li {
-  list-style: none;
-  font-size: 1em;
-  padding-bottom: 10px; }
-
-a {
-  color: MediumAquaMarine; }
-  a:hover {
-    color: Sienna; }
+  margin: 20px; }
+  .main li {
+    font-size: 1em;
+    padding-bottom: 10px;
+    list-style: none; }
+  .main a {
+    color: MediumAquaMarine; }
+    .main a:hover {
+      color: Sienna; }
 
 .button {
   margin: 20px;
   padding: 10px; }
-
-button {
-  background-color: inherit;
-  color: MediumAquaMarine;
-  text-decoration: none;
-  cursor: pointer;
-  border: none;
-  margin-right: 5px; }
-  button:active {
+  .button button {
+    margin-right: 5px;
+    margin-left: -16px;
+    cursor: pointer;
+    text-decoration: none;
+    color: MediumAquaMarine;
     border: none;
-    background: inherit;
-    box-shadow: none; }
+    background-color: inherit; }
+    .button button:active {
+      border: none;
+      background: inherit;
+      box-shadow: none; }
 
 #diu {
   width: 400px;
   height: 400px;
-  margin-top: 20px; }
+  margin: 20px; }
 
 .diu {
   background-image: url("/images/diu_piu.jpg");

@@ -1,64 +1,76 @@
-@import "reset";
+@import 'reset';
 
 body {
-  background: Snow;
   font-family: 'Inconsolata', monospace;
+
+  background: Snow;
 }
 
 #home {
   position: relative;
+
   margin: auto 50px;
 }
 
-h1 {
-  font-size: 3em;
+.headers {
+  margin: 20px;
+  h1 {
+    font-size: 3em;
+  }
+  h2 {
+    font-size: 1.4em;
+  }
 }
 
-h2 {
-  font-size: 1.4em;
-  margin: 10px 0 10px;
-}
 
 .main {
   margin: 20px;
-  padding: 10px;
-}
 
-li {
-  list-style: none;
-  font-size: 1em;
-  padding-bottom: 10px;
-}
+  li {
+    font-size: 1em;
 
-a {
-  color: MediumAquaMarine;
-  &:hover {
-    color: Sienna;
+    padding-bottom: 10px;
+
+    list-style: none;
+  }
+
+  a {
+    color: MediumAquaMarine;
+    &:hover {
+      color: Sienna;
+    }
   }
 }
+
+
 
 .button {
   margin: 20px;
   padding: 10px;
-}
-button {
-  background-color: inherit;
-  color: MediumAquaMarine;
-  text-decoration: none;
-  cursor: pointer;
-  border: none;
-  margin-right: 5px;
-  &:active {
+
+  button {
+    margin-right: 5px;
+    margin-left: -16px;
+
+    cursor: pointer;
+    text-decoration: none;
+
+    color: MediumAquaMarine;
     border: none;
-    background: inherit;
-    box-shadow: none;
+    background-color: inherit;
+    &:active {
+      border: none;
+      background: inherit;
+      box-shadow: none;
+    }
   }
 }
+
 
 #diu {
   width: 400px;
   height: 400px;
-  margin-top: 20px;
+  margin: 20px;
 }
 
 .diu {

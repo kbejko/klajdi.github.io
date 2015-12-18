@@ -1,6 +1,7 @@
 var button = document.querySelector("button")
 var diu = document.getElementById("diu")
 var content = document.querySelector("span")
+
 button.addEventListener("click", function(){
   if (diu.className === "") {
     diu.className = "diu"
