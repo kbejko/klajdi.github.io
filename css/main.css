@@ -198,8 +198,6 @@ body {
 
 .headers {
   margin: 20px; }
-  .headers h1 {
-    font-size: 3em; }
   .headers h2 {
     font-size: 1.4em; }
 
@@ -220,7 +218,6 @@ body {
   .button button {
     margin-right: 5px;
     margin-left: -16px;
-    cursor: pointer;
     text-decoration: none;
     color: MediumAquaMarine;
     border: none;
@@ -238,4 +235,5 @@ body {
 .diu {
   background-image: url("/images/diu_piu.jpg");
   background-position: center;
-  background-size: cover; }
+  background-size: cover;
+  box-shadow: -1px 1px Sienna; }
