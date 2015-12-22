@@ -2,76 +2,43 @@
 
 body {
   font-family: 'Inconsolata', monospace;
-
-  background: Snow;
 }
-
-#home {
-  position: relative;
-
-  margin: auto 50px;
-}
-
-.headers {
-  margin: 20px;
-  h2 {
-    font-size: 1.4em;
-  }
-}
-
 
 .main {
-  margin: 20px;
-
-  li {
-    font-size: 1em;
-
-    padding-bottom: 10px;
-
-    list-style: none;
-  }
-
-  a {
-    color: MediumAquaMarine;
-    &:hover {
-      color: Sienna;
-    }
-  }
+  height: 100vh;
 }
-
-
-
-.button {
-  margin: 20px;
-  padding: 10px;
-
-  button {
-    margin-right: 5px;
-    margin-left: -16px;
-
-    text-decoration: none;
-
-    color: MediumAquaMarine;
-    border: none;
-    background-color: inherit;
-    &:active {
-      border: none;
-      background: inherit;
-      box-shadow: none;
-    }
-  }
+.intro, .github, .contact, .diu, {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  size: cover;
+  position: center;
+  height: inherit;
 }
-
-
-#diu {
-  width: 400px;
-  height: 400px;
-  margin: 20px;
+.intro {
+  background-color: Pink;
 }
-
+.github {
+  background-color: Coral;
+}
 .diu {
   background-image: url('/images/diu_piu.jpg');
   background-position: center;
   background-size: cover;
-  box-shadow: -1px 1px Sienna;
+}
+.contact {
+  background-color: PaleVioletRed;
+}
+
+p {
+  max-width: 400px;
+  font-size: 1.4em;
+  color: AliceBlue;
+}
+.disclaimer {
+  margin-top: 50px;
+  display: flex;
+  text-align: right;
 }
