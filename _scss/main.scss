@@ -28,6 +28,7 @@ body {
   background-image: url('/images/diu_piu.jpg');
   background-position: center;
   background-size: cover;
+  z-index: -1;
 }
 .contact {
   background-color: PaleVioletRed;
@@ -44,5 +45,5 @@ p {
   text-align: right;
 }
 a {
-  color: DarkSlateBlue;
+  color: darkslateblue;
 }
