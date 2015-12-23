@@ -1,4 +1,5 @@
-@import 'reset';
+@import "reset";
+@import "nav";
 
 body {
   font-family: 'Inconsolata', monospace;
@@ -7,7 +8,7 @@ body {
 .main {
   height: 100vh;
 }
-.intro, .github, .contact, .diu, {
+.intro, .github, .contact, .diu {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -41,4 +42,7 @@ p {
   margin-top: 50px;
   display: flex;
   text-align: right;
+}
+a {
+  color: DarkSlateBlue;
 }

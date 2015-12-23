@@ -1,13 +1,14 @@
-var button = document.querySelector("button")
-var diu = document.getElementById("diu")
-var content = document.querySelector("span")
+'use strict';
 
-button.addEventListener("click", function(){
-  if (diu.className === "") {
-    diu.className = "diu"
-    content.innerHTML = "if you've had enough of this nonsense"
-  } else {
-    diu.className = diu.className.replace("diu", "")
-    content.innerHTML = "to see a picture of my grandpa peeing on love"
-  }
-})
+(function() {
+  var body = document.body;
+  var burgerMenu = document.getElementsByClassName('b-menu')[0];
+  var burgerContain = document.getElementsByClassName('b-container')[0];
+  var burgerNav = document.getElementsByClassName('b-nav')[0];
+
+  burgerMenu.addEventListener('click', function toggleClasses() {
+    [body, burgerContain, burgerNav].forEach(function (el) {
+      el.classList.toggle('open');
+    });
+  }, false);
+})();
