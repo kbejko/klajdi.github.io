@@ -188,52 +188,63 @@ td,
 th {
   padding: 0; }
 
+.nav {
+  position: fixed;
+  list-style: none;
+  right: 30px;
+  top: 30px; }
+
 body {
   font-family: 'Inconsolata', monospace;
-  background: Snow; }
-
-#home {
-  position: relative;
-  margin: auto 50px; }
-
-.headers {
-  margin: 20px; }
-  .headers h2 {
-    font-size: 1.4em; }
+  line-height: 1.3; }
 
 .main {
-  margin: 20px; }
-  .main li {
-    font-size: 1em;
-    padding-bottom: 10px;
-    list-style: none; }
-  .main a {
-    color: MediumAquaMarine; }
-    .main a:hover {
-      color: Sienna; }
+  height: 100vh; }
 
-.button {
-  margin: 20px;
-  padding: 10px; }
-  .button button {
-    margin-right: 5px;
-    margin-left: -16px;
-    text-decoration: none;
-    color: MediumAquaMarine;
-    border: none;
-    background-color: inherit; }
-    .button button:active {
-      border: none;
-      background: inherit;
-      box-shadow: none; }
+.intro, .github, .contact, .diu {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  size: cover;
+  position: center;
+  height: inherit; }
 
-#diu {
-  width: 400px;
-  height: 400px;
-  margin: 20px; }
+.intro {
+  background-color: Pink; }
+
+.github {
+  background-color: Coral; }
 
 .diu {
   background-image: url("/images/diu_piu.jpg");
   background-position: center;
   background-size: cover;
-  box-shadow: -1px 1px Sienna; }
+  z-index: -1; }
+
+.contact {
+  background-color: PaleVioletRed; }
+
+p {
+  max-width: 360px;
+  font-size: 1.4em;
+  color: AliceBlue; }
+
+.disclaimer {
+  margin-top: 50px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: right; }
+
+a {
+  color: darkslateblue; }

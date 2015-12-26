@@ -1,23 +1,6 @@
-nav {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-
-
-  li {
-    display: inline-block;
-    margin-left: 1em;
-  }
-
-  a {
-    color: LightSkyBlue;
-    text-decoration: none;
-
-      &:hover {
-        color: LightSteelBlue;
-      }
-      &.active {
-        color: LightSalmon;
-      }
-  }
+.nav {
+  position: fixed;
+  list-style: none;
+  right: 30px;
+  top: 30px;
 }

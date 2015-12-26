@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
-    {% include head.html %}
+  {% include head.html %}
     <body>
-          {{content}}
-          <script defer src="/js/main.js"></script>
+        {% include nav.html %}
+        {{content}}
+        <script defer src="/js/main.js"></script>
     </body>
 </html>
