@@ -9,7 +9,7 @@ body {
 .main {
   height: 100vh;
 }
-.intro, .github, .contact, .diu {
+.intro, .github, .diu, .footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -31,7 +31,7 @@ body {
   background-size: cover;
   z-index: -1;
 }
-.contact {
+.footer {
   background-color: PaleVioletRed;
 }
 

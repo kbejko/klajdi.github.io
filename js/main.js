@@ -1,8 +1,6 @@
-'use strict';
-
-(function() {
-  var body = document.body;
-  var nav = document.getElementsByClassName('nav');
-  // var burgerContain = document.getElementsByClassName('b-container')[0];
-  // var burgerNav = document.getElementsByClassName('b-nav')[0];
-})();
+var firstLi = document.getElementsByTagName("li")[0]
+var firstA = document.getElementsByTagName("a")[0]
+firstLi.onclick = function(){
+  // console.log("Hello")
+  firstA.classList.remove("active")
+}

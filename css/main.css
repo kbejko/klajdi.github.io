@@ -193,6 +193,13 @@ th {
   list-style: none;
   right: 30px;
   top: 30px; }
+  .nav li, .nav a {
+    margin-top: 10px; }
+    .nav li .active, .nav a .active {
+      border-left: 3px solid snow;
+      padding-left: 10px; }
+    .nav li:hover, .nav a:hover {
+      color: snow; }
 
 body {
   font-family: 'Inconsolata', monospace;
@@ -201,7 +208,7 @@ body {
 .main {
   height: 100vh; }
 
-.intro, .github, .contact, .diu {
+.intro, .github, .diu, .footer {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -231,7 +238,7 @@ body {
   background-size: cover;
   z-index: -1; }
 
-.contact {
+.footer {
   background-color: PaleVioletRed; }
 
 p {
