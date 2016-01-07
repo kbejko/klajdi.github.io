@@ -192,7 +192,13 @@ th {
   position: fixed;
   list-style: none;
   right: 30px;
-  top: 30px; }
+  top: 30px;
+  z-index: 1; }
+  .nav li, .nav a {
+    font-size: 40px;
+    margin-top: 10px; }
+    .nav li:hover, .nav a:hover {
+      color: snow; }
 
 body {
   font-family: 'Inconsolata', monospace;

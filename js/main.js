@@ -1,8 +1,29 @@
-'use strict';
+$(document).ready(function(){
 
-(function() {
-  var body = document.body;
-  var nav = document.getElementsByClassName('nav');
-  // var burgerContain = document.getElementsByClassName('b-container')[0];
-  // var burgerNav = document.getElementsByClassName('b-nav')[0];
-})();
+  $("#down").on("click", function(event){
+    event.preventDefault()
+
+    $('.active').removeClass(function(){
+      $(this).next().addClass('active')
+      return 'active'
+    })
+
+    $("body, html").animate({
+      scrollTop: $(".active").offset().top
+    }, 1000)
+  })
+
+  $("#up").on("click", function(event){
+    event.preventDefault()
+
+    $('.active').removeClass(function(){
+      $(this).prev().addClass('active')
+      return 'active'
+    })
+
+    $("body, html").animate({
+      scrollTop: $(".active").offset().top
+    }, 1000)
+  })
+  
+})
