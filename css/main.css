@@ -199,6 +199,8 @@ th {
     margin-top: 10px; }
     .nav li:hover, .nav a:hover {
       color: snow; }
+  .nav #up {
+    display: none; }
 
 body {
   font-family: 'Inconsolata', monospace;
