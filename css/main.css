@@ -188,6 +188,18 @@ td,
 th {
   padding: 0; }
 
+@-webkit-keyframes down {
+  from {
+    font-size: 0; }
+  to {
+    font-size: 30px; } }
+
+@keyframes down {
+  from {
+    font-size: 0; }
+  to {
+    font-size: 30px; } }
+
 .nav {
   position: fixed;
   list-style: none;
@@ -195,10 +207,15 @@ th {
   top: 30px;
   z-index: 1; }
   .nav li, .nav a {
-    font-size: 40px;
-    margin-top: 10px; }
+    font-size: 30px;
+    margin-top: 5px; }
     .nav li:hover, .nav a:hover {
       color: snow; }
+  .nav #down {
+    -webkit-animation-name: down;
+            animation-name: down;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s; }
   .nav #up {
     display: none; }
 
@@ -206,19 +223,19 @@ body {
   font-family: 'Inconsolata', monospace;
   line-height: 1.3; }
 
-.main {
+section {
   height: 100vh; }
 
-.intro, .github, .diu, .contact {
+div {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
@@ -242,17 +259,15 @@ body {
 .contact {
   background-color: PaleVioletRed; }
 
-p {
+.content {
   max-width: 360px;
-  font-size: 1.4em;
-  color: AliceBlue; }
+  font-size: 1.1em;
+  color: AliceBlue;
+  padding: 0 25px 0 25px; }
 
 .disclaimer {
-  margin-top: 50px;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: right; }
+  font-size: 0.8em;
+  margin-bottom: 5px; }
 
 a {
   color: darkslateblue; }

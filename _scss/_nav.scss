@@ -1,3 +1,8 @@
+@keyframes down {
+  from {font-size: 0}
+  to {font-size: 30px}
+}
+
 .nav {
   position: fixed;
   list-style: none;
@@ -6,17 +11,17 @@
   z-index: 1;
 
   li, a {
-    font-size: 40px;
-    margin-top: 10px;
+    font-size: 30px;
+    margin-top: 5px;
     &:hover {
       color: snow;
     }
-    // &:active {
-    //   border-left: 3px solid snow;
-    //   padding-left: 10px;
-    // }
   }
 
+  #down {
+    animation-name: down;
+    animation-duration: 3s;
+  }
   #up {
     display: none;
   }
