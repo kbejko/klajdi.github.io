@@ -1,0 +1,49 @@
+.bar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  // margin: 5px;
+
+  ul {
+    width: 100%;
+    text-align: right;
+    li {
+      list-style: none;
+      font-size: 0.8em;
+      margin: 5px;
+      color: black;
+    }
+  }
+
+  .ten {
+    width: 10%;
+    background-color: paleturquoise;
+    text-indent: 12%;
+  }
+  .twenty {
+    width: 20%;
+    background-color: plum;
+    text-indent: 22%
+  }
+  .thirty {
+    width: 30%;
+    background-color: pink;
+    text-indent: 32%;
+  }
+  .forty {
+    width: 40%;
+    background-color: cornflowerblue;
+    text-indent: 42%;
+  }
+  .fifty {
+    width: 50%;
+    background-color: ghostwhite;
+    text-indent: 52%;
+  }
+  .sixty {
+    width: 60%;
+    background-color: mediumspringgreen;
+    text-indent: 62%;
+  }
+
+}

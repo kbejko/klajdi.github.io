@@ -1,5 +1,6 @@
 @import "reset";
 @import "nav";
+@import "bar";
 
 body {
   font-family: 'Inconsolata', monospace;
@@ -38,7 +39,7 @@ div {
 }
 
 .content {
-  max-width: 360px;
+  max-width: 40%;
   font-size: 1.1em;
   color: AliceBlue;
   padding: 0 25px 0 25px;
