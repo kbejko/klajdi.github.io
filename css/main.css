@@ -188,55 +188,78 @@ td,
 th {
   padding: 0; }
 
-@-webkit-keyframes down {
+@-webkit-keyframes rotateIn {
   from {
-    font-size: 0; }
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    -webkit-transform: rotate3d(0, 0, 1, -200deg);
+            transform: rotate3d(0, 0, 1, -200deg);
+    opacity: 0; }
   to {
-    font-size: 30px; } }
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    -webkit-transform: none;
+            transform: none;
+    opacity: 1; } }
 
-@keyframes down {
+@keyframes rotateIn {
   from {
-    font-size: 0; }
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    -webkit-transform: rotate3d(0, 0, 1, -200deg);
+            transform: rotate3d(0, 0, 1, -200deg);
+    opacity: 0; }
   to {
-    font-size: 30px; } }
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    -webkit-transform: none;
+            transform: none;
+    opacity: 1; } }
 
-.nav {
+.contact {
   position: fixed;
   list-style: none;
   right: 30px;
   top: 30px;
   z-index: 1; }
-  .nav li, .nav a {
+  .contact li, .contact a {
     font-size: 30px;
-    margin-top: 5px; }
-    .nav li:hover, .nav a:hover {
+    margin-top: 5px;
+    -webkit-animation-name: rotateIn;
+            animation-name: rotateIn; }
+    .contact li:hover, .contact a:hover {
       color: snow; }
-  .nav #down {
-    -webkit-animation-name: down;
-            animation-name: down;
-    -webkit-animation-duration: 3s;
-            animation-duration: 3s; }
-  .nav #up {
-    display: none; }
+
+@-webkit-keyframes bar {
+  0% {
+    width: 0%; }
+  100% {
+    width: 100%; } }
+
+@keyframes bar {
+  0% {
+    width: 0%; }
+  100% {
+    width: 100%; } }
 
 .bar {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-align-items: flex-start;
-      -ms-flex-align: start;
-          align-items: flex-start; }
+  margin: 5%; }
   .bar ul {
-    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
     text-align: right; }
     .bar ul li {
       list-style: none;
       font-size: 0.8em;
       margin: 5px;
       color: black; }
+  .bar .start {
+    -webkit-animation-name: bar;
+            animation-name: bar;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-timing-function: cubic-bezier(0.26, 0, 0.58, 1);
+            animation-timing-function: cubic-bezier(0.26, 0, 0.58, 1); }
   .bar .ten {
     width: 10%;
     background-color: paleturquoise;
@@ -248,26 +271,27 @@ th {
   .bar .thirty {
     width: 30%;
     background-color: pink;
-    text-indent: 32%; }
+    text-indent: 33%; }
   .bar .forty {
     width: 40%;
     background-color: cornflowerblue;
-    text-indent: 42%; }
+    text-indent: 44%; }
   .bar .fifty {
     width: 50%;
     background-color: ghostwhite;
-    text-indent: 52%; }
+    text-indent: 55%; }
   .bar .sixty {
     width: 60%;
     background-color: mediumspringgreen;
-    text-indent: 62%; }
+    text-indent: 66%; }
 
 body {
   font-family: 'Inconsolata', monospace;
   line-height: 1.3; }
 
 section {
-  height: 100vh; }
+  height: 100vh;
+  color: AliceBlue; }
 
 div {
   display: -webkit-flex;
@@ -283,15 +307,18 @@ div {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  size: cover;
-  position: center;
   height: inherit; }
 
+.content {
+  max-width: 40%;
+  font-size: 1.1em;
+  padding: 5%; }
+
 .intro {
-  background-color: Pink; }
+  background-color: palevioletred; }
 
 .github {
-  background-color: Coral; }
+  background-color: blanchedalmond; }
 
 .diu {
   background-image: url("/images/diu_piu.jpg");
@@ -299,18 +326,15 @@ div {
   background-size: cover;
   z-index: -1; }
 
-.contact {
-  background-color: PaleVioletRed; }
-
-.content {
-  max-width: 40%;
-  font-size: 1.1em;
-  color: AliceBlue;
-  padding: 0 25px 0 25px; }
-
 .disclaimer {
   font-size: 0.8em;
   margin-bottom: 5px; }
 
 a {
   color: darkslateblue; }
+
+.down {
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+  padding-bottom: 5%; }

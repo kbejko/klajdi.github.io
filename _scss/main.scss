@@ -1,5 +1,5 @@
 @import "reset";
-@import "nav";
+@import "contact";
 @import "bar";
 
 body {
@@ -9,6 +9,7 @@ body {
 
 section {
   height: 100vh;
+  color: AliceBlue;
 }
 
 div {
@@ -17,16 +18,20 @@ div {
   justify-content: space-around;
   align-items: center;
   text-align: center;
-  size: cover;
-  position: center;
   height: inherit;
 }
 
+.content {
+  max-width: 40%;
+  font-size: 1.1em;
+  padding: 5%;
+}
+
 .intro {
-  background-color: Pink;
+  background-color: palevioletred;
 }
 .github {
-  background-color: Coral;
+  background-color: blanchedalmond;
 }
 .diu {
   background-image: url('/images/diu_piu.jpg');
@@ -34,20 +39,16 @@ div {
   background-size: cover;
   z-index: -1;
 }
-.contact {
-  background-color: PaleVioletRed;
-}
 
-.content {
-  max-width: 40%;
-  font-size: 1.1em;
-  color: AliceBlue;
-  padding: 0 25px 0 25px;
-}
 .disclaimer {
   font-size: 0.8em;
   margin-bottom: 5px;
 }
 a {
   color: darkslateblue;
+}
+
+.down {
+  align-self: center;
+  padding-bottom: 5%;
 }

@@ -1,11 +1,18 @@
+@keyframes bar {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
 .bar {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  // margin: 5px;
+  margin: 5%;
 
   ul {
-    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
     text-align: right;
     li {
       list-style: none;
@@ -13,6 +20,12 @@
       margin: 5px;
       color: black;
     }
+  }
+
+  .start {
+    animation-name: bar;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(0.26, 0, 0.58, 1);
   }
 
   .ten {
@@ -28,22 +41,28 @@
   .thirty {
     width: 30%;
     background-color: pink;
-    text-indent: 32%;
+    text-indent: 33%;
   }
   .forty {
     width: 40%;
     background-color: cornflowerblue;
-    text-indent: 42%;
+    text-indent: 44%;
   }
   .fifty {
     width: 50%;
     background-color: ghostwhite;
-    text-indent: 52%;
+    text-indent: 55%;
   }
   .sixty {
     width: 60%;
     background-color: mediumspringgreen;
-    text-indent: 62%;
+    text-indent: 66%;
   }
 
 }
+
+// @media only screen and (max-height: 364px) {
+//   ul {
+//     max-height: 50%;
+//   }
+// }

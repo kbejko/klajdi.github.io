@@ -1,26 +1,37 @@
 $(document).ready(function(){
 
   // On click removes active class to section and adds it to its next sibling.
-  $("#down").on("click", function(event){
-    event.preventDefault()
 
-    $(".active").removeClass(function(){
-      $(this).next().addClass("active")
-      return "active"
-    })
 
-    $("body, html").animate({
-      scrollTop: $(".active").offset().top
-    }, 1000)
-  })
+  function isElementInViewport(elem){
+    var $elem = $(elem);
 
-  // Once you get to the bottom of the window the down button is hidden
-  $(window).on("scroll", function(){
-    if ($(this).scrollTop() + $(this).height() === $(document).height()){
-      $("#up").show()
-      $("#down").hide()
-    } else {
-      $("#up").hide()
+    // Get the scroll position of the page.
+    var scrollElem = ((navigator.userAgent.toLowerCase().indexOf('webkit') != -1) ? 'body' : 'html');
+    var viewportTop = $(scrollElem).scrollTop();
+    var viewportBottom = viewportTop + $(window).height();
+
+    // Get the position of the element on the page.
+    var elemTop = Math.round( $elem.offset().top );
+    var elemBottom = elemTop + $elem.height();
+
+    return (elemTop < viewportBottom) && (elemBottom > viewportTop)
+  }
+
+
+  // Check if it's time to start the animation.
+  function checkAnimation(){
+    var $elem = $('.techknown')
+
+    if ($elem.hasClass('start')) return
+
+    if (isElementInViewport($elem)) {
+      $elem.addClass('start')
     }
+  }
+
+  // Capture scroll events
+  $(window).scroll(function(){
+    checkAnimation()
   })
 })

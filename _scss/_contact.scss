@@ -1,28 +1,17 @@
-@keyframes down {
-  from {font-size: 0}
-  to {font-size: 30px}
-}
-
-.nav {
+.contact {
   position: fixed;
   list-style: none;
   right: 30px;
   top: 30px;
   z-index: 1;
 
+
   li, a {
     font-size: 30px;
     margin-top: 5px;
+
     &:hover {
       color: snow;
     }
-  }
-
-  #down {
-    animation-name: down;
-    animation-duration: 3s;
-  }
-  #up {
-    display: none;
   }
 }
