@@ -188,34 +188,6 @@ td,
 th {
   padding: 0; }
 
-@-webkit-keyframes rotateIn {
-  from {
-    -webkit-transform-origin: center;
-            transform-origin: center;
-    -webkit-transform: rotate3d(0, 0, 1, -200deg);
-            transform: rotate3d(0, 0, 1, -200deg);
-    opacity: 0; }
-  to {
-    -webkit-transform-origin: center;
-            transform-origin: center;
-    -webkit-transform: none;
-            transform: none;
-    opacity: 1; } }
-
-@keyframes rotateIn {
-  from {
-    -webkit-transform-origin: center;
-            transform-origin: center;
-    -webkit-transform: rotate3d(0, 0, 1, -200deg);
-            transform: rotate3d(0, 0, 1, -200deg);
-    opacity: 0; }
-  to {
-    -webkit-transform-origin: center;
-            transform-origin: center;
-    -webkit-transform: none;
-            transform: none;
-    opacity: 1; } }
-
 .contact {
   position: fixed;
   list-style: none;
@@ -224,9 +196,7 @@ th {
   z-index: 1; }
   .contact li, .contact a {
     font-size: 30px;
-    margin-top: 5px;
-    -webkit-animation-name: rotateIn;
-            animation-name: rotateIn; }
+    margin-top: 5px; }
     .contact li:hover, .contact a:hover {
       color: snow; }
 
@@ -252,7 +222,7 @@ th {
       list-style: none;
       font-size: 0.8em;
       margin: 5px;
-      color: black; }
+      color: darkslateblue; }
   .bar .start {
     -webkit-animation-name: bar;
             animation-name: bar;
@@ -318,7 +288,8 @@ div {
   background-color: palevioletred; }
 
 .github {
-  background-color: blanchedalmond; }
+  background-color: blanchedalmond;
+  color: darkslateblue; }
 
 .diu {
   background-image: url("/images/diu_piu.jpg");

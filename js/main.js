@@ -21,7 +21,7 @@ $(document).ready(function(){
 
   // Check if it's time to start the animation.
   function checkAnimation(){
-    var $elem = $('.techknown')
+    var $elem = $('.skills')
 
     if ($elem.hasClass('start')) return
 
